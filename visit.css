@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  header p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Notification Section */
+  .notification-section {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .notification-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease-in-out;
+  }
+  
+  .notification-card h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #6a11cb;
+  }
+  
+  .notification-card p {
+    margin: 20px 0 0;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Animation Container */
+  .animation-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    background-color: #6a11cb;
+    border-radius: 50%;
+    margin: 0 10px;
+    animation: bounce 1.5s infinite ease-in-out;
+  }
+  
+  .circle:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .circle:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
